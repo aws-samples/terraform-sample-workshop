@@ -42,3 +42,11 @@ variable "team" {
 variable "ec2_port" {
   default = 80
 }
+
+variable "vpc_id" {}
+
+variable "public_subnets" {}
+
+variable "private_subnets" {}
+
+variable "user_data_path" {}

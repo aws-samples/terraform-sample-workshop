@@ -11,6 +11,14 @@ terraform {
   }
 }
 
+//Import the constants
+module "environment" {
+  source = "../../"
+}
+
 module "default_vpc" {
-    source = ""
+  source      = "../../../../../../modules/providers/aws/vpc"
+  vpc_name    = var.vpc_name
+  cidr_vpc    = var.cidr_vpc
+  environment = "prd"
 }

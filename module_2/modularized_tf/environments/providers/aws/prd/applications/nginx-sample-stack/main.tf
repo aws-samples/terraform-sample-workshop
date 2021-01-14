@@ -19,7 +19,7 @@ module "environment" {
 module "aws_security_group_lb" {
   source  = "../../../../../../modules/providers/aws/security_group/create_sg"
   sg_name = var.sg_name
-  vpc_id  = data.aws_vpc.vpc.id
+  vpc_id  = data.terraform_remote_state.vpc.outputs.vpc_id
 }
 
 module "sg_rules_https" {
@@ -33,7 +33,7 @@ module "sg_rules_https" {
 module "load_balancer" {
   source           = "../../../../../../modules/providers/aws/elb"
   elb_name         = var.elb_name
-  subnets_ids      = module.environment.public_subnets
+  subnets_ids      = data.terraform_remote_state.vpc.outputs.public_subnets
   security_groups  = module.aws_security_group_lb.id
   application_port = 80
 }
@@ -56,7 +56,7 @@ module "aws_autoscaling_group" {
   load_balancer     = [module.load_balancer.elb_name]
   health_check_type = "ELB"
   lc_name           = module.aws_launch_configuration.lc_name
-  subnets_id        = module.environment.private_subnets
+  subnets_id        = data.terraform_remote_state.vpc.outputs.private_subnets
   tag_name          = var.asg_name
   tag_team          = var.team
 }
@@ -65,12 +65,12 @@ module "aws_autoscaling_group" {
 module "security_group" {
   source  = "../../../../../../modules/providers/aws/security_group/create_sg"
   sg_name = "wordpress-poc-sg"
-  vpc_id  = data.aws_vpc.vpc.id
+  vpc_id  = data.terraform_remote_state.vpc.outputs.vpc_id
 }
 
 module "add_sg_rule" {
   source            = "../../../../../../modules/providers/aws/security_group/create_sg_rule"
   port              = var.ec2_port
-  ips_sg_list       = ["10.10.0.0/16"]
+  ips_sg_list       = ["10.5.0.0/16"]
   security_group_id = module.security_group.id
 }
