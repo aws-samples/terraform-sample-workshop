@@ -166,3 +166,11 @@ The Output should be the follow:
 <p align="left"> 
 <img src="images/terraform_destroy.png">
 </p>
+
+As you can see, this command destroy all the resources that we provisioned before.
+
+# Completion
+
+Congratulations, you finished the first module.
+
+[Click here to go to the next module](../module_2)
