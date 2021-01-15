@@ -39,7 +39,10 @@ For more information consult the [Official Terraform Documentation](https://www.
 
 We are going to deploy our first stack using a simple **one file snippet** of Terraform with all the resources that we will need to provision.
 
-(Terraform Architecture Diagram Goes Here)
+<p align="center"> 
+<img src="images/one_file_tf.png">
+</p>
+
 
 **ALL THE COMMANDS WILL NEED TO BE RUN INSIDE one_file_tf/simple_nginx_stack/**
 
