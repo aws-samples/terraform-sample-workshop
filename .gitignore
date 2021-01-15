@@ -5,7 +5,7 @@
 ### Terraform ###
 # Local .terraform directories
 **/.terraform/*
-
+id_rsa*
 # .tfstate files
 *.tfstate
 *.tfstate.*

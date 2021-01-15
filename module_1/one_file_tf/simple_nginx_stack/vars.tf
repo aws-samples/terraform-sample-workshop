@@ -1,9 +1,43 @@
-variable "lc_name" {
-  default = "lc-sample-nginx"
+// VPC Variables
+
+variable "vpc_name" {
+  default = "production-vpc"
 }
 
-variable "vpc_id" {
-  default = ""
+variable "cidr_vpc" {
+  default = "10.5.0.0/16"
+}
+
+variable "cidr_network_bits" {
+  default = "8"
+}
+
+variable "subnet_count" {
+  default = "2"
+}
+
+variable "azs" {
+  default = {
+    "us-east-1" = "us-east-1a,us-east-1b,us-east-1c,us-east-1d"
+  }
+}
+
+variable "region" {
+  default = "us-east-1"
+}
+
+variable "zone_name" {
+  default = "client"
+}
+
+variable "environment" {
+  default = "dev"
+}
+
+// Stack Variables
+
+variable "lc_name" {
+  default = "lc-sample-nginx"
 }
 
 variable "ami_id" {
@@ -15,7 +49,7 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-  default = "ecs-demo-key"
+  default = "nginx-demo-key"
 }
 
 variable "asg_name" {
@@ -24,14 +58,6 @@ variable "asg_name" {
 
 variable "lb_name" {
   default = "my-nginx-lb"
-}
-
-variable "public_subnets" {
-  default = ["", ""]
-}
-
-variable "private_subnets" {
-  default = ["", ""]
 }
 
 variable "sg_name" {
