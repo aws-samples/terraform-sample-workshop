@@ -2,6 +2,13 @@
 
 This repository contains hands on content that will guide you through building a simple Web Server stack using terraform in many ways, learn how to code infraestructure with terraform from a simple snippet to a modularized approach
 
+# Prerequisites
+
+- Terraform v0.14 or above
+- AWS account
+
+**THIS WORKSHOP WAS TESTED IN US-EAST-1 REGION**
+
 # Overview of Workshop Labs
 
 [Module 1](./module_1) - This module is responsible to teach you the basics of Terraform and how to code a simple architecture using Terraform resources.
