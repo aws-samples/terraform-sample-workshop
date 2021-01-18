@@ -56,7 +56,7 @@ Now we need to change the **AWS Bucket** where out Terraform State will be saved
 
 If you don't have a bucket in AWS create one, [How to Create AWS Bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
 
-Open **one_file_tf/simple_nginx_stack/main.tf** and do the follow:
+Open **one_file_tf/simple_nginx_stack/main.tf** and do the following:
 
 ```terraform
 terraform {
