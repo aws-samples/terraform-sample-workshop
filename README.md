@@ -4,7 +4,7 @@ This repository contains hands on content that will guide you through building a
 
 # Prerequisites
 
-- Terraform v0.14 or above
+- [Terraform v0.14 or above](https://www.terraform.io/downloads.html)
 - AWS account
 
 **THIS WORKSHOP WAS TESTED IN US-EAST-1 REGION**
