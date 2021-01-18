@@ -44,7 +44,7 @@ Inside every module and provider environment folder, we have the same structure 
 - vars.tf
 - data.tf
 
-If you need any information, go back to [module 1](../module_1/) and check it
+> If you need any information, go back to [module 1](../module_1/) and check it
 
 # Deploying our stack in a modularized way
 

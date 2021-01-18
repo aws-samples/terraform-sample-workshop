@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     region  = "us-east-1"
-    bucket  = ""
+    bucket  = "<YOUR BUCKET NAME GOES HERE>"
     key     = "environments/providers/aws/prd/applications/nginx-sample-stack/main.tf"
     encrypt = true
   }
