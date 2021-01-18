@@ -1,6 +1,6 @@
 # Terraform Sample Workshop Module 3
 
-This module is responsible to teach you how to create other layer of abstraction, using module in module configuration, this enables you to create patterns for your stacks and write much less code reusing whats was already wrote.
+This module is responsible to teach you how to create other layer of abstraction, using module in module configuration, this enables you to create patterns for your stacks and write much less code reusing whats has already been written.
 
 > A module is a container for multiple resources that are used together. Modules can be used to create lightweight abstractions, so that you can describe your infrastructure in terms of its architecture, rather than directly in terms of physical objects.
 
@@ -65,6 +65,7 @@ Execute:
 ```shell
 cd modularized_tf/environments/providers/aws/prd/applications/nginx-sample-stack/
 ```
+> Don't forget to go to the module_3 folder before running the command above
 
 Now we need to change the **AWS Bucket** where out Terraform State will be saved, and also the AWS bucket where the VPC state is saved, since we are using terraform remote state approach to share states between tf stacks.
 
