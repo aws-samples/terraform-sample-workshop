@@ -169,7 +169,7 @@ Changing VPC remote state data source:
 Open **modularized_tf/environments/providers/aws/prd/prd/applications/nginx-sample-stack/data.tf** and do the follow:
 
 ```terraform
-// Terraform remote statate
+// Terraform remote state
 data "terraform_remote_state" "vpc" {
  backend     = "s3"
 
