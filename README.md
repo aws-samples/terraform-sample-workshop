@@ -1,3 +1,9 @@
+<!--
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+SPDX-License-Identifier: MIT-0
+-->
+
 # Terraform Sample Workshop
 
 This repository contains hands on content that will guide you through building a simple Web Server stack using terraform in many ways, learn how to code infraestructure with terraform from a simple snippet to a modularized approach

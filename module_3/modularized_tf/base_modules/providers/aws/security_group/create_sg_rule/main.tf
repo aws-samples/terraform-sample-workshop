@@ -1,3 +1,7 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+#
+# SPDX-License-Identifier: MIT-0
+
 resource "aws_security_group_rule" "allow_all" {
   type        = "ingress"
   from_port   = var.port

@@ -1,3 +1,9 @@
+<!--
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+SPDX-License-Identifier: MIT-0
+-->
+
 # Terraform Sample Workshop Module 2
 
 This module is responsible to teach you how to create modules in terraform and use them, you will learn how to create re-usable Terraform resources to improve agility when coding infraestructure.

@@ -1,3 +1,7 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+#
+# SPDX-License-Identifier: MIT-0
+
 resource "aws_autoscaling_group" "default_asg" {
   count                     = var.associate_elb == "EC2" ? 1 : 0
   name                      = var.asg_name

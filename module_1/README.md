@@ -1,3 +1,9 @@
+<!--
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+SPDX-License-Identifier: MIT-0
+-->
+
 # Terraform Sample Workshop Module 1
 
 In this module you will learn what is Terraform and also learn the basic of how to code a sample **.tf** file to create a stack, it will teach you the basics of Terraform and how to code a simple architecture using Terraform resources.

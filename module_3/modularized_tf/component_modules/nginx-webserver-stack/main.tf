@@ -1,3 +1,7 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+#
+# SPDX-License-Identifier: MIT-0
+
 module "aws_security_group_lb" {
   source  = "../../base_modules/providers/aws/security_group/create_sg"
   sg_name = var.sg_name

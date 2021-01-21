@@ -1,3 +1,7 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+#
+# SPDX-License-Identifier: MIT-0
+
 resource "aws_security_group" "default" {
   name        = "${var.sg_name}-sg"
   description = "Managed by Terraform"

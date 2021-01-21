@@ -1,3 +1,7 @@
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+#
+# SPDX-License-Identifier: MIT-0
+
 resource "aws_elb" "default_elb" {
   name                        = var.elb_name
   subnets                     = var.subnets_ids

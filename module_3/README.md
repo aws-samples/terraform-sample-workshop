@@ -1,3 +1,9 @@
+<!--
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+SPDX-License-Identifier: MIT-0
+-->
+
 # Terraform Sample Workshop Module 3
 
 This module is responsible to teach you how to create other layer of abstraction, using module in module configuration, this enables you to create patterns for your stacks and write much less code reusing whats has already been written.
