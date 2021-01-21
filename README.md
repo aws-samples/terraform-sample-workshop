@@ -34,3 +34,12 @@ So the above stack will be deployed in all the 3 modules of this workshop, but i
 ## Start the workshop
 
 [Click Here to start the first module](./module_1)
+
+## Security
+
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+
+## License
+
+This library is licensed under the MIT-0 License. See the LICENSE file.
+
